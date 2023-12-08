@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <svg viewBox="0 0 24 24" width="37" class="side-menu__icon">
+            <use href="./images/icons/symbol-defs.svg#icon-menu"></use>
+        </svg>
+        <div class="side-menu-container">
+            <div>
+            <svg viewBox="0 0 24 24" width="37" class="icon-close">
+                <use href="./images/icons/symbol-defs.svg#icon-close"></use>
+            </svg>
+            <div class="side-menu-container__wrapper">
+                <div class="side-menu">
+            <svg viewBox="0 0 24 24" width="37" class="side-menu__icon">
+                <use href="./images/icons/symbol-defs.svg#icon-logo"></use>
+            </svg>
+        <div class="side-menu__logo">
+        <h1 class="side-menu__title">Dashboard</h1>
+        <span class="side-menu__version">v.01</span>
+        </div>
+        </div>
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link"> <svg class="navigation__item-icon" viewBox="0 0 24 24" width="24">
+                        <use href="./images/icons/symbol-defs.svg#icon-key-square"></use>
+                    </svg> Dashboard</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link"> <svg class="navigation__item-icon" viewBox="0 0 24 24" width="24">
+                        <use href="./images/icons/symbol-defs.svg#icon-d-square"></use>
+                    </svg> Product</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link navigation__link--active"> <div class="navigation__link__wrapp"> <svg viewBox="0 0 24 24" width="24">
+                        <use href="./images/icons/symbol-defs.svg#icon-user-square"></use>
+                    </svg> Customers </div> <svg viewBox="0 0 32 32" width="16">
+                        <use href="./images/icons/symbol-defs.svg#icon-chevron-right"></use>
+                    </svg></a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link"> <div class="navigation__link__wrapp"> <svg class="navigation__item-icon" viewBox="0 0 24 24" width="24">
+                        <use href="./images/icons/symbol-defs.svg#icon-wallet"></use>
+                    </svg> Income </div> <svg viewBox="0 0 32 32" width="16">
+                        <use href="./images/icons/symbol-defs.svg#icon-chevron-right"></use>
+                    </svg></a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link"> <div class="navigation__link__wrapp"> <svg class="navigation__item-icon" viewBox="0 0 24 24" width="24">
+                        <use href="./images/icons/symbol-defs.svg#icon-shape"></use>
+                    </svg> Promote </div> <svg viewBox="0 0 32 32" width="16">
+                        <use href="./images/icons/symbol-defs.svg#icon-chevron-right"></use>
+                    </svg></a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link"> <div class="navigation__link__wrapp"> <svg class="navigation__item-icon" viewBox="0 0 24 24" width="24">
+                        <use href="./images/icons/symbol-defs.svg#icon-message-question"></use>
+                    </svg> Help </div> <svg class="navigation__item-icon" viewBox="0 0 32 32" width="16">
+                        <use href="./images/icons/symbol-defs.svg#icon-chevron-right"></use>
+                    </svg></a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+        </div>
+        <div class="user">
+            <img src="./images/Ellipse.png" alt="user avatar" class="user__avatar">
+            <div class="user-info">
+            <p class="user-info__name">Evano</p>
+            <p class="user-info__role">Project Manager</p>
+            </div>
+        </div>
+        </div>
+        <div class="overlay"></div>
+    </header>
+    <section class="dashboard">
+        <h2 class="dashboard__greeting">Hello Evano 👋🏼,</h2>
+        <div class="dashboard__background">
+        <div class="dashboard__wrapper">
+        <div class="dashboard__customers">
+            <h2 class="dashboard__title">All Customers</h2>
+            <p class="dashboard__subtitle">Active Members</p>
+        </div>
+        <div class="search">
+            <input type="search" placeholder="Search" class="search__input">
+            <label class="search__icon"><svg viewBox="0 0 32 32" width="24"><use href="./images/icons/symbol-defs.svg#icon-search"></use></svg></label>
+        </div>
+        </div>
+        <div class="table-wrapp">
+<table class="table">
+    <thead class="table__head" >
+        <tr class="table__row">
+            <th class="table__header">Customer Name</th>
+            <th class="table__header">Company</th>
+            <th class="table__header">Phone Number</th>
+            <th class="table__header">Email</th>
+            <th class="table__header">Country</th>
+            <th class="table__header">Status</th>
+        </tr>
+        <span class="table__head--line"></span>
+    </thead>
+    <tbody class="table__body">
+                    <tr class="table__row">
+                        <td>Jane Cooper</td>
+                        <td>Microsoft</td>
+                        <td>(225) 555-0118</td>
+                        <td>jane@microsoft.com</td>
+                        <td>United States</td>
+                        <td><div class="active">Active</div></td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Floyd Miles</td>
+                        <td>Yahoo</td>
+                        <td>(205) 555-0100</td>
+                        <td>floyd@yahoo.com</td>
+                        <td>Kiribati</td>
+                        <td><div class="inactive">Inactive</div></td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Ronald Richards</td>
+                        <td>Adobe</td>
+                        <td>(302) 555-0107</td>
+                        <td>ronald@adobe.com</td>
+                        <td>Israel</td>
+                        <td><div class="inactive">Inactive</div></td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Marvin McKinney</td>
+                        <td>Tesla</td>
+                        <td>(252) 555-0126</td>
+                        <td>marvin@tesla.com</td>
+                        <td>Iran</td>
+                        <td><div class="active">Active</div></td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Jerome Bell</td>
+                        <td>Google</td>
+                        <td>(629) 555-0129</td>
+                        <td>jerome@google.com</td>
+                        <td>Réunion</td>
+                        <td><div class="active">Active</div></td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Kathryn Murphy</td>
+                        <td>Microsoft</td>
+                        <td>(406) 555-0120</td>
+                        <td>kathryn@microsoft.com</td>
+                        <td>Curaçao</td>
+                        <td><div class="active">Active</div></td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Jacob Jones</td>
+                        <td>Yahoo</td>
+                        <td>(208) 555-0112</td>
+                        <td>jacob@yahoo.com</td>
+                        <td>Brazil</td>
+                        <td><div class="inactive">Inactive</div></td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Kristin Watson</td>
+                        <td>Facebook</td>
+                        <td>(704) 555-0127</td>
+                        <td>kristin@facebook.com</td>
+                        <td>Aland Islands</td>
+                        <td><div class="inactive">Inactive</div></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="mobile-table">
+                <dl class="mobile-table__row">
+                    <dt class="mobile-table__label">Customer Name:</dt>
+                    <dd class="mobile-table__value">Jane Cooper</dd>
+                    <dt class="mobile-table__label">Company:</dt>
+                    <dd class="mobile-table__value">Microsoft</dd>
+                    <dt class="mobile-table__label">Phone Number:</dt>
+                    <dd class="mobile-table__value">(225) 555-0118</dd>
+                    <dt class="mobile-table__label">Email:</dt>
+                    <dd class="mobile-table__value">jane@microsoft.com</dd>
+                    <dt class="mobile-table__label">Country:</dt>
+                    <dd class="mobile-table__value">United States</dd>
+                    <dt class="mobile-table__label">Status:</dt>
+                    <dd class="mobile-table__value">
+                        <div class="active">Active</div>
+                    </dd>
+                </dl>
+                <dl class="mobile-table__row">
+                    <dt class="mobile-table__label">Customer Name:</dt>
+                    <dd class="mobile-table__value">Floyd Miles</dd>
+                    <dt class="mobile-table__label">Company:</dt>
+                    <dd class="mobile-table__value">Yahoo</dd>
+                    <dt class="mobile-table__label">Phone Number:</dt>
+                    <dd class="mobile-table__value">(205) 555-0100</dd>
+                    <dt class="mobile-table__label">Email:</dt>
+                    <dd class="mobile-table__value">floyd@yahoo.com</dd>
+                    <dt class="mobile-table__label">Country:</dt>
+                    <dd class="mobile-table__value">Kiribati</dd>
+                    <dt class="mobile-table__label">Status:</dt>
+                    <dd class="mobile-table__value">
+                        <div class="inactive">Inactive</div>
+                    </dd>
+                </dl>
+                <dl class="mobile-table__row">
+                    <dt class="mobile-table__label">Customer Name:</dt>
+                    <dd class="mobile-table__value">Ronald Richards</dd>
+                    <dt class="mobile-table__label">Company:</dt>
+                    <dd class="mobile-table__value">Adobe</dd>
+                    <dt class="mobile-table__label">Phone Number:</dt>
+                    <dd class="mobile-table__value">(302) 555-0107</dd>
+                    <dt class="mobile-table__label">Email:</dt>
+                    <dd class="mobile-table__value">ronald@adobe.com</dd>
+                    <dt class="mobile-table__label">Country</dt>
+                    <dd class="mobile-table__value">Israel</dd>
+                    <dt class="mobile-table__label">Status:</dt>
+                    <dd class="mobile-table__value">
+                        <div class="inactive">Inactive</div>
+                    </dd>
+                </dl>
+                <dl class="mobile-table__row">
+                    <dt class="mobile-table__label">Customer Name:</dt>
+                    <dd class="mobile-table__value">Marvin McKinney</dd>
+                    <dt class="mobile-table__label">Company:</dt>
+                    <dd class="mobile-table__value">Tesla</dd>
+                    <dt class="mobile-table__label">Phone Number:</dt>
+                    <dd class="mobile-table__value">(252) 555-0126</dd>
+                    <dt class="mobile-table__label">Email:</dt>
+                    <dd class="mobile-table__value">marvin@tesla.com</dd>
+                    <dt class="mobile-table__label">Country</dt>
+                    <dd class="mobile-table__value">Iran</dd>
+                    <dt class="mobile-table__label">Status:</dt>
+                    <dd class="mobile-table__value">
+                        <div class="active">Active</div>
+                    </dd>
+                </dl>
+                <dl class="mobile-table__row">
+                    <dt class="mobile-table__label">Customer Name:</dt>
+                    <dd class="mobile-table__value">Jerome Bell</dd>
+                    <dt class="mobile-table__label">Company:</dt>
+                    <dd class="mobile-table__value">Google</dd>
+                    <dt class="mobile-table__label">Phone Number:</dt>
+                    <dd class="mobile-table__value">(629) 555-0129</dd>
+                    <dt class="mobile-table__label">Email:</dt>
+                    <dd class="mobile-table__value">jerome@google.com</dd>
+                    <dt class="mobile-table__label">Country:</dt>
+                    <dd class="mobile-table__value">Réunion</dd>
+                    <dt class="mobile-table__label">Status:</dt>
+                    <dd class="mobile-table__value">
+                        <div class="active">Active</div>
+                    </dd>
+                </dl>
+                <dl class="mobile-table__row">
+                    <dt class="mobile-table__label">Customer Name:</dt>
+                    <dd class="mobile-table__value">Kathryn Murphy</dd>
+                    <dt class="mobile-table__label">Company:</dt>
+                    <dd class="mobile-table__value">Microsoft</dd>
+                    <dt class="mobile-table__label">Phone Number:</dt>
+                    <dd class="mobile-table__value">(406) 555-0120</dd>
+                    <dt class="mobile-table__label">Email:</dt>
+                    <dd class="mobile-table__value">kathryn@microsoft.com</dd>
+                    <dt class="mobile-table__label">Country:</dt>
+                    <dd class="mobile-table__value">Curaçao</dd>
+                    <dt class="mobile-table__label">Status:</dt>
+                    <dd class="mobile-table__value">
+                        <div class="active">Active</div>
+                    </dd>
+                </dl>
+                <dl class="mobile-table__row">
+                    <dt class="mobile-table__label">Customer Name:</dt>
+                    <dd class="mobile-table__value">Jacob Jones</dd>
+                    <dt class="mobile-table__label">Company:</dt>
+                    <dd class="mobile-table__value">Yahoo</dd>
+                    <dt class="mobile-table__label">Phone Number:</dt>
+                    <dd class="mobile-table__value">(208) 555-0112</dd>
+                    <dt class="mobile-table__label">Email:</dt>
+                    <dd class="mobile-table__value">jacob@yahoo.com</dd>
+                    <dt class="mobile-table__label">Country:</dt>
+                    <dd class="mobile-table__value">Brazil</dd>
+                    <dt class="mobile-table__label">Status:</dt>
+                    <dd class="mobile-table__value">
+                        <div class="inactive">Inactive</div>
+                    </dd>
+                </dl>
+                <dl class="mobile-table__row">
+                    <dt class="mobile-table__label">Customer Name:</dt>
+                    <dd class="mobile-table__value">Kristin Watson</dd>
+                    <dt class="mobile-table__label">Company:</dt>
+                    <dd class="mobile-table__value">Facebook</dd>
+                    <dt class="mobile-table__label">Phone Number:</dt>
+                    <dd class="mobile-table__value">(704) 555-0127</dd>
+                    <dt class="mobile-table__label">Email:</dt>
+                    <dd class="mobile-table__value">kristin@facebook.com</dd>
+                    <dt class="mobile-table__label">Country:</dt>
+                    <dd class="mobile-table__value">Aland Islands</dd>
+                    <dt class="mobile-table__label">Status:</dt>
+                    <dd class="mobile-table__value">
+                        <div class="inactive">Inactive</div>
+                    </dd>
+                </dl>
+                
+            </div>
+            <div class="data-wrapp">
+            <span class="data">Showing data 1 to 8 of 256K entries</span>
+            <ul class="pagination">
+                <li class="pagination__element"></li>
+                <li class="pagination__element pagination--active"><a class="pagination__link" href="#">1</a></li>
+                <li class="pagination__element"><a class="pagination__link" href="#">2</a></li>
+                <li class="pagination__element"><a class="pagination__link" href="#">3</a></li>
+                <li class="pagination__element"><a class="pagination__link" href="#">4</a></li>
+                <li class="pagination__element"><a class="pagination__link" href="#">...</a></li>
+                <li class="pagination__element"><a class="pagination__link" href="#">40</a></li>
+                <li class="pagination__element"></li>
+            </ul>
+            </div>
+            </div>
+            </div>
+    </section>
+    <script src="./js/main.js"></script>
+</body>
+</html>

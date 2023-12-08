@@ -1,0 +1,133 @@
+.header {
+    background-color: $color-background-secondary;
+    width: 306px;
+    padding: 36px 28px 76px 28px;
+    background-color: inherit;
+    background-color: $color-active-text;
+
+    @media screen and (max-width: 600px) {
+        display: flex;
+        justify-content: flex-end;
+        width: auto;
+    }
+
+    @media screen and (max-width: 1200px) {
+        background-color: inherit;
+    }
+}
+
+.icon-close {
+    margin-left: 200px;
+    cursor: pointer;
+     
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+}
+
+.side-menu__icon {
+    cursor: pointer;
+
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+}
+
+.side-menu {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &__logo {
+        display: flex;
+        gap: 4px;
+        align-items: baseline;
+    }
+    
+    &__version {
+        color: $color-secondary;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -0.1px;
+    }
+    
+    &__title {
+        font-size: 26px;
+        font-weight: 600;
+        letter-spacing: 0.26px;
+    }
+}
+
+.navigation__list {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+
+.navigation__item {
+    color: $color-navigation;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.14px;
+    width: 250px;
+
+    &:hover {
+        background-color: $color-active;
+        color: $color-active-text;
+        border-radius: 8px;
+}
+}
+
+.navigation__link {
+    display: flex;
+    gap: 14px;
+    padding: 11px 8px 11px 11px;
+
+    &__wrapp {
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    &--active {
+        background-color: $color-active;
+        color: $color-active-text;
+        border-radius: 8px;
+    }
+
+}
+
+.navigation__item:nth-child(n+3) .navigation__link {
+    justify-content: space-between;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+
+    &__name {
+        color: $color-primary;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.14px;
+    }
+
+    &__role {
+        color: $color-third;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.12px;
+    }
+}

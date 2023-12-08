@@ -1,0 +1,70 @@
+@import './utils/normalize.scss';
+@import './utils/variables.scss';
+@import './components/header.scss';
+@import './components/dashboard.scss';
+
+body {
+    font-family: Poppins;
+    background-color: $color-background;
+    display: flex;
+
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+    }
+}
+
+.side-menu-container {
+    width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1200px) {
+        display: none;
+        position: absolute;
+        z-index: 11;
+        background-color: white;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+    }
+}
+
+.side-menu-container--open {
+    display: flex;
+    position: fixed;
+    height: 98vh;
+    width: 250px;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 10px;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 50;
+}
+
+.side-menu-container--open+.overlay {
+    display: block;
+}
+
+.dashboard {
+    padding: 41px 95px 258px 71px;
+    width: 100%;
+
+    @media screen and (max-width: 600px) {
+        padding: 0px;
+    }
+}
