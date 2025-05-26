@@ -8,7 +8,7 @@ A lightweight admin dashboard built with **React** and **Vite**, featuring theme
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/your-project.git
+git clone https://github.com/Tkachenko01001/test-dashboard.git
 
 # Navigate into the project directory
 cd your-project
