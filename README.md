@@ -11,7 +11,7 @@ A lightweight admin dashboard built with **React** and **Vite**, featuring theme
 git clone https://github.com/Tkachenko01001/test-dashboard.git
 
 # Navigate into the project directory
-cd your-project
+cd test-dashboard
 
 # Install dependencies
 npm install
