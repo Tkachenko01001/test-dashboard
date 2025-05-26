@@ -14,6 +14,7 @@ function App() {
         <Route path={APP_ROUTES.OVERVIEW} element={<Overview />} />
         <Route path={APP_ROUTES.USERS} element={<Users />} />
         <Route path={APP_ROUTES.SETTINGS} element={<Settings />} />
+        <Route path="*" element={<NotFound />} />
       </Route>
       <Route path="*" element={<NotFound />} />
     </Routes>
